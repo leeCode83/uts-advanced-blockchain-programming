@@ -12,7 +12,7 @@ contract Marketplace {
         bool exists;
     }
 
-    mapping(uint256 => Product) internal products;
+    mapping(uint256 => Product) public products;
     
     uint256 public nextProductId = 1;
 
